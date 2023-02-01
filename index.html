@@ -24,31 +24,24 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+		rel="stylesheet">
 	<style>
 		.h-100 {
 			min-height: 100vh;
 		}
 
 		body {
-			background-size: cover;
-			background: url("static/bg.jpg") no-repeat fixed;
-			color: #e6e0cb;
-			font-family: "Open Sans", sans-serif;
+			background-color: #f7f7ff;
+			color: #070600;
+			font-family: 'Montserrat', sans-serif;
 			font-weight: 400;
 			font-size: 1.2em;
 		}
 
-		.hero-text {
-			font-weight: 100;
-			font-size: 4em;
-			font-family: Raleway, sans-serif;
-		}
-
 		.container {
-			padding-top: 4.5em;
+			padding-top: 6em;
 		}
 
 		.my-image {
@@ -61,15 +54,12 @@
 
 		a,
 		a:visited {
-			color: #e6e0cb;
+			color: #070600;
 		}
 
 		a:hover {
-			color: #fff;
-		}
-
-		.spacer {
-			height: 5em;
+			color: #23b5d3;
+			transition: all 200ms ease-in-out;
 		}
 
 		.title {
@@ -88,26 +78,39 @@
 			list-style-type: none;
 		}
 
-		@media screen and (max-width: 1000px) {
-			.hero-text {
-				font-size: 2.2em;
-			}
+		.links a {
+			text-decoration: none;
+			font-weight: 600;
 		}
 
-		@media screen and (max-width: 767px) {
-			.hero-text {
-				font-size: 1.5em;
-			}
+		.links a::after {
+			position: relative;
+			left: 2.5px;
+			margin-left: 2.5px;
+			margin-right: 2.5px;
+			/* position: absolute; */
+			content: "•";
+			/* left: calc(100% + 0.5rem); */
+			color: #ccc;
+			/* top: 0; */
+		}
+
+		.links a:last-child:after {
+			content: "";
+		}
+
+		.links li {
+			margin-right: 25px;
 		}
 
 	</style>
 </head>
 
 <body>
-	<div class="h-100">
+	<section id="intro" class="h-100">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-7 offset-md-1 mt-5">
+				<div class="col-xs-12 col-lg-7 offset-md-1 mt-5">
 					<h3 class=" mt-5 pl-5 pr-5">
 						Hello there! My name is Levente.
 					</h3>
@@ -132,12 +135,25 @@
 							<i class="fab fa-instagram fa-xl"></i></a>
 					</div>
 				</div>
-				<div class="col-xs-12 text-center col-md-3 mt-5">
+				<div class="col-xs-12 text-center col-lg-3 mt-5">
 					<img class="my-image" src="static/me.png" alt="Picture of myself" />
 				</div>
 			</div>
+			<div class="row mt-5">
+				<div class="col-xs-12 col-lg-4 offset-md-1">
+					<div class="links">
+						<a href="#intro">Intro</a>
+						<a href="#aboutme">About me</a>
+						<a href="#work">Work</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="aboutme" class="h-100">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-7 offset-md-1 mt-5">
+				<div class="col-xs-12 col-lg-7 offset-md-1 mt-5">
 					<p class="small muted mb-3">About me</p>
 					<p>
 						I've been creating websites professionally since 2021.
@@ -145,15 +161,20 @@
 						I've always had a keen interest in making websites, ever since I have been using computers.
 					</p>
 					<p>
-						Since starting my studies in IT Engineering (at John von Neumann University), I've also started working for
+						Since starting my studies in IT Engineering (at John von Neumann University), I've also started working
+						with
 						<a href="https://sundayit.hu/">Sunday Ltd.</a> in 2021.
 						<br>
 						I've been working with them on lots of projects, some of them can be viewed below.
 					</p>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section id="work" class="h-100">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-7 offset-md-1 mt-5">
+				<div class="col-xs-12 col-lg-7 offset-md-1 mt-5">
 					<p class="small muted mb-3">My work</p>
 					<li class="list-item title">
 						<a href="https://karbejelentes.mondaycare.hu">MDY Damage Reporter</a>
@@ -194,7 +215,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	</div>
 </body>
 <script>
