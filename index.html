@@ -46,8 +46,8 @@
 
 		.my-image {
 			width: 12em;
-			background-color: #23b5d3;
-			padding: 2px;
+			background-color: #070600;
+			padding: 1px;
 			border-radius: 100%;
 		}
 
@@ -122,21 +122,22 @@
 					</h3>
 					<div class="mt-4">
 						<a onClick="javascript:window.open('mailto:proksalevente@gmail.com', 'mail');event.preventDefault()"
-							data-toggle="tooltip" data-placement="bottom" title="E-Mail" href="mailto:proksalevente@gmail.com">
+							data-bs-toggle="tooltip" data-bs-placement="bottom" title="E-Mail" href="mailto:proksalevente@gmail.com">
 							<i class="far fa-paper-plane fa-xl"></i></a>
-						<a target="_blank" href="https://github.com/djsall" data-toggle="tooltip" data-placement="bottom"
+						<a target="_blank" href="https://github.com/djsall" data-bs-toggle="tooltip" data-bs-placement="bottom"
 							title="GitHub">
 							<i class="fab fa-github-square fa-xl"></i></a>
-						<a href="https://www.linkedin.com/in/levente-proksa-53985b241/" target="_blank" data-toggle="tooltip"
-							data-placement="bottom" title="LinkedIn">
+						<a href="https://www.linkedin.com/in/levente-proksa-53985b241/" target="_blank" data-bs-toggle="tooltip"
+							data-bs-placement="bottom" title="LinkedIn">
 							<i class="fa-brands fa-linkedin fa-xl"></i></a>
-						<a target="_blank" href="https://instagram.com/proksalevente" data-toggle="tooltip" data-placement="bottom"
-							title="Instagram">
+						<a target="_blank" href="https://instagram.com/proksalevente" data-bs-toggle="tooltip"
+							data-bs-placement="bottom" title="Instagram">
 							<i class="fab fa-instagram fa-xl"></i></a>
 					</div>
 				</div>
 				<div class="col-xs-12 text-center col-lg-3 mt-5">
-					<img class="my-image" src="static/me.png" alt="Picture of myself" />
+					<img class="my-image" src="static/me.png" alt="Picture of myself" data-bs-toggle="tooltip"
+						data-bs-placement="bottom" title="It's me!" />
 				</div>
 			</div>
 			<div class="row mt-5">
@@ -220,8 +221,13 @@
 </body>
 <script>
 	$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
-	})
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		});
+
+
+	});
 </script>
 
 </html>
