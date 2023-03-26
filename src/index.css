@@ -32,7 +32,7 @@ a {
 .work-list-item > a {
 	@apply font-bold underline text-xl;
 }
-.work-list-item > h6 {
+.work-list-item > h5 {
 	@apply font-bold text-xl;
 }
 
@@ -56,10 +56,10 @@ a {
 	@apply flex justify-center md:justify-start md:my-3;
 }
 .social-links > * {
-	@apply mr-4;
+	@apply mr-4 md:mr-1;
 }
 .social-links svg {
-	@apply hover:fill-cyan-400;
+	@apply hover:fill-cyan-400 w-[48px] h-[48px] md:w-8 md:h-8;
 }
 
 .link-dots a::after {
