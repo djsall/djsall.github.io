@@ -24,8 +24,8 @@
 
 <body class="bg-slate-100 text-slate-800 leading-10">
 	<section id="intro" class="">
-		<div class="grid grid-cols-1 lg:grid-cols-4 mt-4">
-			<div class="lg:col-span-3 mt-5">
+		<div class="grid grid-cols-1 md:grid-cols-4">
+			<div class="md:col-span-3 mt-0 md:mt-5 text-align">
 				<h3>
 					Hello there! My name is Levente.
 				</h3>
@@ -35,7 +35,7 @@
 				<h3>
 					Nice to meet you.
 				</h3>
-				<div class="mt-4">
+				<div class="text-align m-align">
 					<a onClick="javascript:window.open('mailto:proksalevente@gmail.com', 'mail');event.preventDefault()"
 						href="mailto:proksalevente@gmail.com">
 						<i class="far fa-paper-plane fa-xl hover:text-cyan-400"></i></a>
@@ -47,11 +47,13 @@
 						<i class="fab fa-instagram fa-xl hover:text-cyan-400"></i></a>
 				</div>
 			</div>
-			<img class="w-56 border-slate-800 hover:border-cyan-400 border-2 rounded-full" src="/src/me.png"
-				alt="Picture of myself" />
+			<div class="flex justify-center md:block md:ml-10">
+				<img class="w-56 border-slate-800 hover:border-cyan-400 border-2 rounded-full" src="/src/me.png"
+					alt="Picture of myself" />
+			</div>
 		</div>
 
-		<div class="link-dots mt-5">
+		<div class="link-dots text-align m-align">
 			<a class="text-lg no-underline" href="#intro">Intro</a>
 			<a class="text-lg no-underline" href="#aboutme">About me</a>
 			<a class="text-lg no-underline" href="#work">Work</a>
