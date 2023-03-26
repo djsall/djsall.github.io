@@ -1,0 +1,52 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+	@apply h-[100vh];
+	@apply lg:w-[60%] lg:mx-auto pt-5 lg:pt-40;
+}
+p {
+	@apply mb-2 leading-7 text-xl font-normal;
+}
+h3 {
+	@apply mb-2 font-medium text-3xl;
+}
+
+a {
+	@apply underline hover:text-cyan-400;
+}
+
+.tech-stack {
+	@apply text-gray-500 text-base mb-4;
+}
+
+.work-list-item > a {
+	@apply font-bold underline text-xl;
+}
+.work-list-item > h6 {
+	@apply font-bold text-xl;
+}
+
+.work-list-item {
+	@apply mb-6;
+}
+
+.highlight-section > span {
+	@apply font-medium text-cyan-500 hover:text-cyan-400;
+}
+
+.link-dots a::after {
+	position: relative;
+	left: 2.5px;
+	margin-left: 2.5px;
+	margin-right: 2.5px;
+	content: "•";
+	@apply text-slate-400;
+}
+
+.link-dots a:last-child:after {
+	content: "";
+}
