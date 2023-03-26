@@ -56,10 +56,10 @@ a {
 	@apply flex justify-center md:justify-start md:my-3;
 }
 .social-links > * {
-	@apply mr-1;
+	@apply mr-4;
 }
 .social-links svg {
-	@apply w-6 h-6 hover:fill-cyan-400;
+	@apply hover:fill-cyan-400;
 }
 
 .link-dots a::after {
