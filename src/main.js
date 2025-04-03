@@ -1,2 +1,1 @@
-impor;
 import "./index.css";
