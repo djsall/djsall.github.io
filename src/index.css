@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 section {
-	@apply min-h-[100vh];
+	@apply min-h-screen;
 	@apply md:w-[60%] md:mx-auto pt-5 md:pt-40;
 	@apply px-5 md:px-0;
 	font-family: "Montserrat", "Open Sans", sans-serif;
@@ -59,18 +58,6 @@ a {
 	@apply mr-4 md:mr-1;
 }
 .social-links svg {
-	@apply hover:fill-cyan-400 w-[48px] h-[48px] md:w-8 md:h-8;
+	@apply hover:fill-cyan-400 w-12 h-12 md:w-8 md:h-8;
 }
 
-.link-dots a::after {
-	position: relative;
-	left: 2.5px;
-	margin-left: 2.5px;
-	margin-right: 2.5px;
-	content: "•";
-	@apply text-slate-400;
-}
-
-.link-dots a:last-child:after {
-	content: "";
-}
