@@ -3,12 +3,19 @@ layer(base);
 
 @import 'tailwindcss';
 
+body {
+	@apply text-zinc-600 bg-zinc-900 dark:bg-zinc-50;
+	@apply transition-colors;
+}
+
 section {
 	@apply min-h-screen;
 	@apply md:w-[60%] md:mx-auto pt-5 md:pt-40;
 	@apply px-5 md:px-0;
 	font-family: "Montserrat", "Open Sans", sans-serif;
+	@apply leading-10;
 }
+
 p {
 	@apply mb-2 leading-7 text-xl font-normal;
 }
@@ -58,6 +65,6 @@ a {
 	@apply mr-4 md:mr-1;
 }
 .social-links svg {
-	@apply hover:fill-rose-600 w-12 h-12 md:w-8 md:h-8;
+	@apply w-12 h-12 md:w-8 md:h-8 text-zinc-600 hover:text-rose-600;
 }
 
