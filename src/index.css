@@ -66,12 +66,12 @@ a {
 	@apply mr-4 md:mr-1;
 }
 .social-links svg {
-	@apply w-12 h-12 md:w-8 md:h-8;
+	@apply w-8 h-8;
 	@apply text-zinc-600 hover:text-rose-600;
 	@apply transition-colors;
 }
 
 .me {
-	@apply border-zinc-600 hover:border-rose-600 border-2 rounded-full w-56 h-56;
+	@apply border-zinc-600 hover:border-rose-600 border-2 rounded-full max-w-56 max-h-56 aspect-square;
 }
 
